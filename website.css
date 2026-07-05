@@ -1,0 +1,547 @@
+/* ==========================================
+            GOOGLE FONT
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    background-image:url("background-for-website1.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+                HERO
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:70px 25px;
+
+}
+
+/* ==========================================
+            TOP CARDS
+========================================== */
+
+.top-cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:45px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:70px;
+
+}
+
+/* ==========================================
+                CARD
+========================================== */
+
+.card{
+
+    width:280px;
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:18px;
+
+    padding:12px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+    backdrop-filter:blur(10px);
+
+    transition:.35s;
+
+    animation:fadeUp 1s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px) scale(1.04);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.35);
+
+}
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:12px;
+
+}
+
+.card p{
+
+    margin-top:12px;
+
+    text-align:center;
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    color:#444;
+
+}
+
+/* ==========================================
+            HERO CONTENT
+========================================== */
+
+.hero-content{
+
+    width:min(900px,95%);
+
+    text-align:center;
+
+    animation:fadeUp 1.4s ease;
+
+}
+
+.hero-content h1{
+
+    color:#ff4f93;
+
+    font-size:58px;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+
+}
+
+.hero-content h2{
+
+    color:white;
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-content p{
+
+    color:white;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+                QUOTE
+========================================== */
+
+.quote{
+
+    margin-top:40px;
+
+    color:#ffd6eb;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    font-style:italic;
+
+}
+
+/* ==========================================
+                BUTTON
+========================================== */
+
+.main-button{
+
+    margin-top:45px;
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:60px;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    background:linear-gradient(45deg,#ff4d94,#ff86b6);
+
+    color:white;
+
+    transition:.35s;
+
+    animation:pulse 2.5s infinite;
+
+}
+
+.main-button:hover{
+
+    transform:scale(1.08);
+
+    background:linear-gradient(45deg,#ff2f83,#ff6ba5);
+
+}
+
+/* ==========================================
+                GALLERY
+========================================== */
+
+.gallery{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,280px);
+
+    justify-content:center;
+
+    gap:35px;
+
+    padding:80px 20px;
+
+}
+
+.gallery-card{
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:18px;
+
+    padding:12px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.22);
+
+    transition:.35s;
+
+    animation:fadeUp 1s ease;
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+/* ==========================================
+            TEDDY FLOAT
+========================================== */
+
+.teddy{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* ==========================================
+            LITTLE MESSAGE
+========================================== */
+
+.little-message{
+
+    width:min(900px,92%);
+
+    margin:40px auto;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+}
+
+.little-message h2{
+
+    color:#ffd6eb;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.little-message p{
+
+    color:white;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+                FOOTER
+========================================== */
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:20px;
+
+    line-height:2;
+
+}
+
+/* ==========================================
+            ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.hero-content h2{
+
+font-size:25px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.main-button{
+
+width:90%;
+
+}
+
+}/* ==========================================
+        JAVASCRIPT ANIMATIONS
+========================================== */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:.8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Floating Hearts */
+
+.floating-heart{
+
+position:fixed;
+
+bottom:-30px;
+
+animation:heartUp 6s linear forwards;
+
+pointer-events:none;
+
+z-index:999;
+
+}
+
+/* Mouse Hearts */
+
+.mouse-heart{
+
+position:absolute;
+
+animation:mouseHeart 1s forwards;
+
+pointer-events:none;
+
+z-index:999;
+
+}
+
+@keyframes heartUp{
+
+0%{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-900px);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes mouseHeart{
+
+0%{
+
+transform:translate(-50%,-50%) scale(1);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translate(-50%,-120px) scale(0);
+
+opacity:0;
+
+}
+
+}

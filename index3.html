@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Love Story ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/birthday.css">
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+
+<section class="birthday-hero">
+
+<div class="birthday-content">
+
+<h1>💖 Our Story Is My Favorite Story 💖</h1>
+
+<h2>We Were Never Just “Something”… We Were Always “Meant To Be” 🌹</h2>
+
+<p class="birthday-message">
+
+❤️ I never believed in destiny before you…<br><br>
+
+🌸 But now I understand why certain people enter our lives…<br><br>
+
+💖 You are not just someone I love… you are the reason I smile without a reason.<br><br>
+
+✨ Every second with you feels like a memory I want to keep forever.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= COUNTER ================= -->
+
+<section class="quote-section">
+
+<div class="quote-box">
+
+<h2>⏳ Our Time Together</h2>
+
+<p id="counter">Loading our love story... ❤️</p>
+
+</div>
+
+</section>
+
+<!-- ================= LOVE INTRO ================= -->
+
+<section class="love-message">
+
+<h2>💌 A Truth From My Heart</h2>
+
+<p>
+
+💖 I don't know how to explain it…<br><br>
+
+🌹 But loving you feels like breathing… I just do it without thinking.<br><br>
+
+❤️ You became my habit, my peace, my happiness, and my home.<br><br>
+
+✨ And no matter what happens in life… this will never change.
+
+</p>
+
+</section>
+
+<!-- ================= IMPORTANT DATES ================= -->
+
+<section class="memory-section">
+
+<div class="memory-card">
+
+<h2>💍 4 January 2026</h2>
+
+<p>
+The day we became “us”…<br>
+The day my heart finally found its place ❤️
+</p>
+
+</div>
+
+<div class="memory-card">
+
+<h2>🎂 6 August</h2>
+
+<p>
+The day the most beautiful soul in my world was born 🌹<br>
+A day I will always celebrate like it's my own ❤️
+</p>
+
+</div>
+
+<div class="memory-card">
+
+<h2>💍 Future Engagement</h2>
+
+<p>
+The moment I will come to your door with a promise 💖<br>
+To make you mine forever, in the most respectful way 🌹
+</p>
+
+</div>
+
+<div class="memory-card">
+
+<h2>💒 Future Wedding</h2>
+
+<p>
+The day our hearts officially become one ❤️<br>
+The day I call you “my wife” for the first time 💍✨
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= LONG LOVE MESSAGE ================= -->
+
+<section class="love-message">
+
+<h2>💌 Why I Love You</h2>
+
+<p>
+
+❤️ I love you because you make my world softer…<br><br>
+
+🌸 Because when I talk to you, everything else disappears…<br><br>
+
+💖 Because your name alone makes my heart calm…<br><br>
+
+✨ Because you are the most beautiful chapter in my life story…<br><br>
+
+🌹 And because no matter how many words I use… I will never be able to describe how much you mean to me.
+
+</p>
+
+</section>
+
+<!-- ================= FINAL MESSAGE ================= -->
+
+<section class="final-message">
+
+<h2>💖 If I Could Say One Thing...</h2>
+
+<p>
+
+🌹 I don’t want perfect days… I just want you.<br><br>
+
+💖 I don’t want perfect life… I just want you in my life.<br><br>
+
+❤️ Because you are already my definition of perfection.
+
+</p>
+
+</section>
+
+<!-- ================= BUTTON ================= -->
+
+<div class="next-page">
+
+<a href="index4.html">
+
+<button class="next-button">
+
+💖 Continue Our Forever Story 💖
+
+</button>
+
+</a>
+
+</div>
+
+<!-- ================= FOOTER TEXT ================= -->
+
+<footer>
+
+<h2>🌹 Made With Endless Love 🌹</h2>
+
+<p>❤️ This website is a piece of my heart written in code ❤️</p>
+
+<p>✨ Every line here means something I can’t say in words ✨</p>
+
+</footer>
+
+<!-- ================= COUNTER SCRIPT ================= -->
+
+<script>
+
+const startDate = new Date("2026-01-04T00:00:00");
+
+function updateCounter() {
+
+const now = new Date();
+
+const diff = now - startDate;
+
+const seconds = Math.floor(diff / 1000);
+const minutes = Math.floor(seconds / 60);
+const hours = Math.floor(minutes / 60);
+const days = Math.floor(hours / 24);
+
+document.getElementById("counter").innerHTML = `
+💖 ${days} Days<br>
+⏳ ${hours % 24} Hours<br>
+⏰ ${minutes % 60} Minutes<br>
+✨ ${seconds % 60} Seconds
+`;
+
+}
+
+setInterval(updateCounter, 1000);
+updateCounter();
+
+</script>
+
+</body>
+</html>
